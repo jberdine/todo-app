@@ -1,0 +1,168 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+  button.liked {
+    color: #98fb98;
+    background-color: #003300;
+  }
+  button.unliked {
+    color: #778899;
+    background-color: #303030;
+  }
+
+  tr:nth-child(2n) {
+    background-color: rgb(45, 52, 58);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  button.liked {
+    background-color: #98fb98;
+    color: #006600;
+  }
+  button.unliked {
+    color: LightSlateGray;
+    background-color: #f0f0f0;
+  }
+  tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+}
+button.liked,
+button.unliked {
+  min-width: 10ch;
+}
+
+@media (min-width: 600px) {
+  #root {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    width: 100%;
+  }
+}
+
+.new {
+  margin: 8px 0px;
+}
+
+table {
+  width: 100%;
+}
+
+#root > div > table > tbody {
+  display: flex;
+  flex-direction: column;
+  tr {
+    display: flex;
+    column-gap: 8px;
+    padding: 6px;
+    align-items: center;
+  }
+}
+
+tr > td:first-child {
+  flex: 1;
+  text-align: left;
+}
+
+.new,
+.filter,
+.visibility {
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+
+.new > input,
+.filter > input {
+  flex: 1;
+}
+
+.new > span,
+.filter > span,
+.visibility > span {
+  min-width: 80px;
+  text-align: left;
+}
+
+.new > button {
+  cursor: pointer;
+  background-color: #0073ff;
+  border-radius: 24px;
+  color: white;
+  white-space: nowrap;
+}
+
+table button {
+  cursor: pointer;
+  background-color: #a60003;
+  border-radius: 24px;
+  color: white;
+}
+
+div.css-1wy0on6 {
+  display: none;
+}
+
+.css-t3ipsp-control:hover div.css-1wy0on6,
+.css-13cymwt-control:hover div.css-1wy0on6 {
+  display: flex;
+}
+
+.tag-dropdown {
+  max-width: 30ch;
+}
+
+.access-dropdown {
+  flex: 1;
+}
+
+.selections {
+  color: #140000;
+  margin: auto;
+}
